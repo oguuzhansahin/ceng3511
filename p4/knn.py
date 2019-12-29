@@ -35,6 +35,7 @@ class KNN:
         return most_common[0][0]
 
 if __name__ == "__main__":
+
     train = np.loadtxt("train.txt",delimiter=",",skiprows=1)
     X_train,y_train = train[...,:-1],train[...,-1]
     
