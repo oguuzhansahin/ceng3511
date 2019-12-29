@@ -48,16 +48,7 @@ if __name__ == "__main__":
     print("custom KNN classification accuracy", accuracy(y_true, predictions))
     
     
-    score_list=[]
     
-    for each in range(1,15):
-      
-        knn2 = KNN(k=each)
-        knn2.fit(X_train,y_train)
-        predictions_v2=knn2.predict(test_labels)
-        score_list.append(accuracy(y_true,predictions_v2))    
-        
-    print(score_list.index(max(score_list)))
     
 
 
